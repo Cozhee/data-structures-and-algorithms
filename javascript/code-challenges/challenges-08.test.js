@@ -92,7 +92,7 @@ For example:
 const isNum = (input) => {
   // Solution code here...
   const reg = /\d/g
-  const found = input.match(reg)
+  const found = reg.test(input)
   if (found) {
     return true
   }
@@ -128,7 +128,7 @@ const isCapitalized = (str) => {
   // Solution code here...
   const newArr = []
   const reg = /[A-Z][a-z]+/gm
-  const found = str.match(reg)
+  const found = reg.test(str)
   if (found) {
     newArr.push(found)
   }
