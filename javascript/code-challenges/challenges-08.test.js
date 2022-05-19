@@ -128,10 +128,9 @@ const isCapitalized = (str) => {
   // Solution code here...
   const newArr = []
   const reg = /[A-Z][a-z]+/gm
-  const found = reg.test(str)
-  if (found) {
-    newArr.push(found)
-  }
+  const found = str.match(reg)
+  newArr.push(found)
+
   return newArr
 };
 
