@@ -9,7 +9,7 @@ Write a function named longestString that takes in an array of strings and retur
 const longestString = (arr) => {
   // Solution code here...
   let longestWord = ''
-  let wordIndex;
+  let wordIndex = - 1
   arr.forEach((word, index) => {
     if (word.length > longestWord.length) {
       longestWord = word
@@ -17,7 +17,6 @@ const longestString = (arr) => {
     }
   })
   return wordIndex
-  console.log(wordIndex)
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -56,7 +55,11 @@ For example, (123) 456-7890 returns 1234567890
 
 const standardizePhoneNumbers = (arr) => {
   // Solution code here...
-
+  let regex = /\d/;
+  return arr.map(str => str.split('')
+    .filter(char => regex.test(char))
+    .join('')
+  );
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -69,12 +72,7 @@ For example, 'abcdefg' returns 'bdf'
 
 const onlyOddChars = (str) => {
   // Solution code here...
-  let newWord = ''
-  for (let i = 0; i > str.length; i++) {
-    if (i % 2 == 1) {
-      newWord + str[i]
-    }
-  }
+  return str.split('').filter((char, idx) => idx % 2).join('');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -85,7 +83,7 @@ Write a function named allHappy that takes in an array of strings and returns a 
 
 const allHappy = (arr) => {
   // Solution code here...
-  return arr.includes(':)')
+  return arr.every(str => str.includes(':)'));
 };
 
 /* ------------------------------------------------------------------------------------------------
