@@ -20,4 +20,4 @@ To run your tests
 
 ### 401 Data Structures, Code Challenges
 
-- Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+[Reverse Array](https://cody576851.invisionapp.com/freehand/Untitled-EusroQnhz?dsid_h=b94dce5499e777f42d4df5cd9fd2ff7baf5a0f2d090a81f98aa116f3bc57f65f&uid_h=4cddbe9cb68e9077a35b6741aa4e7f7705d48e77f04b0a62eaecdd172b4c14f7)
