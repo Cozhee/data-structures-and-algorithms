@@ -3,6 +3,8 @@ For this challenge we will take an array and a value and then place that value i
 
 ## Whiteboard process
 [Whiteboard Solution](https://cody576851.invisionapp.com/freehand/Untitled-5ow9Z1yqq?dsid_h=51f4e3096a20b91f1f82d0d3fb25f8c1cd2c9e84e0caf1fdaafbd270f5321433&uid_h=4cddbe9cb68e9077a35b6741aa4e7f7705d48e77f04b0a62eaecdd172b4c14f7)</br>
+<img width="400" alt="Screen Shot 2022-06-14 at 4 26 06 PM" src="https://user-images.githubusercontent.com/55909913/173705906-34310a29-9dae-4bde-a4e2-97c2d597a06e.png">
+
 
 
 ## Approach
