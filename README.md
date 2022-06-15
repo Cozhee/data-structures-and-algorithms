@@ -20,4 +20,5 @@ To run your tests
 
 ### 401 Data Structures, Code Challenges
 
-[Reverse Array](https://github.com/Cozhee/data-structures-and-algorithms/tree/main/javascript/reverse-arrays)
+1. [Reverse Array](https://github.com/Cozhee/data-structures-and-algorithms/tree/main/javascript/reverse-arrays)
+2. [Shift Array](https://github.com/Cozhee/data-structures-and-algorithms/tree/main/javascript/shift-array)
