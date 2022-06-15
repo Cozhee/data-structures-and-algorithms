@@ -22,3 +22,4 @@ To run your tests
 
 1. [Reverse Array](https://github.com/Cozhee/data-structures-and-algorithms/tree/main/javascript/reverse-arrays)
 2. [Shift Array](https://github.com/Cozhee/data-structures-and-algorithms/tree/main/javascript/shift-array)
+3. [Binary Search](https://github.com/Cozhee/data-structures-and-algorithms/blob/main/javascript/binary-search/binary%20search.md)
