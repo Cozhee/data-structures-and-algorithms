@@ -16,7 +16,7 @@ class LinkedList {
         this.head = null
     }
 
-    add(value) {
+    addToFront(value) {
         const node = new Node(value)
 
         if (!this.head) {
@@ -26,6 +26,23 @@ class LinkedList {
         node.next = this.head
         this.head = node
         return
+    }
+
+    addToEnd(value) {
+        const node = new Node(value);
+
+        if (!this.head) {
+            this.head = node;
+            return;
+        }
+
+        let current = this.head;
+
+        while (current.next) {
+
+            current = current.next;
+        }
+        current.next = node;
     }
 
     traverse() {
