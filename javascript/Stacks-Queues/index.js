@@ -76,9 +76,7 @@ class Queue {
   isEmpty() {
     return this.front === null;
   }
+  
 }
 
-module.exports = {
-  Stack,
-  Queue,
-};
+module.exports = { Stack, Queue };
