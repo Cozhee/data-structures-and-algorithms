@@ -14,5 +14,3 @@
 
 ## traverse
 - Prints out the values in the linked list in a `{ val } => { val } => { val } => NULL` format
-
-

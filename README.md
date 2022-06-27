@@ -20,4 +20,8 @@ To run your tests
 
 ### 401 Data Structures, Code Challenges
 
-[Reverse Array](https://github.com/Cozhee/data-structures-and-algorithms/tree/main/javascript/reverse-arrays)
+1. [Reverse Array](https://github.com/Cozhee/data-structures-and-algorithms/tree/main/javascript/reverse-arrays)
+2. [Shift Array](https://github.com/Cozhee/data-structures-and-algorithms/tree/main/javascript/shift-array)
+3. [Binary Search](https://github.com/Cozhee/data-structures-and-algorithms/blob/main/javascript/binary-search/binary%20search.md)
+4. [Linked Lists](https://github.com/Cozhee/data-structures-and-algorithms/blob/main/javascript/linked-list/README.md)
+5. [Linked List into another Linked List](https://github.com/Cozhee/data-structures-and-algorithms/blob/main/javascript/linked-list-into-linked-list/README.md)
