@@ -1,9 +1,5 @@
 'use strict';
 
-const { add } = require("cheerio/lib/api/traversing");
-const { contains } = require("cheerio/lib/static");
-
-
 class Node {
     constructor(value) {
         this.value = value
@@ -23,9 +19,8 @@ class LinkedList {
             this.head = node
             return;
         }
-        node.next = this.head
+        node.next = this.head;
         this.head = node
-        return
     }
 
     addToEnd(value) {
@@ -43,16 +38,20 @@ class LinkedList {
             current = current.next;
         }
         current.next = node;
+
     }
 
     traverse() {
         let current = this.head
-
+        let str = ''
         while (current) {
-            console.log(current.value)
-            current = current.next
+              str += `{ ${current.value} } -> `
+              current = current.next
         }
-        console.log('Done traversing')
+        str += `NULL`
+        console.log(str)
+        return str
+
     }
 
     includes(value) {
@@ -66,15 +65,15 @@ class LinkedList {
         }
         return contains
     }
-
 }
 
 let linkedList = new LinkedList()
 
-
-linkedList.add(1)
-linkedList.add(2)
-linkedList.add(3)
-
-console.log(linkedList.includes(3))
+// linkedList.addToFront(4)
 // linkedList.traverse()
+// linkedList.addToEnd(6)
+// linkedList.traverse()
+// linkedList.addToEnd(7)
+// linkedList.traverse()
+
+module.exports = linkedList

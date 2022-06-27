@@ -1,3 +1,16 @@
-## Returning the kth element in the linked list from the end (unsolved)
+## Linked List Implementations
 
-![Screen Shot 2022-06-21 at 5 27 20 PM](https://user-images.githubusercontent.com/55909913/174918290-b802ac3c-207c-4438-b8e0-0e5386e4bb72.png)
+-Create a linked list
+-Create a node
+
+## addToFront
+- Should be able to add a node to the head of the linked list
+
+## addToEnd
+- Should be able to add a node to the end of the linked list
+
+## includes
+- Check if a value is present in the linked list
+
+## traverse
+- Prints out the values in the linked list in a `{ val } => { val } => { val } => NULL` format
