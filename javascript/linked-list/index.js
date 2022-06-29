@@ -1,5 +1,8 @@
 'use strict';
 
+const { val } = require("cheerio/lib/api/attributes");
+const { flatten } = require("cheerio/lib/options");
+
 class Node {
     constructor(value) {
         this.value = value
@@ -23,18 +26,16 @@ class LinkedList {
         this.head = node
     }
 
-    addToEnd(value) {
+    append(value) {
         const node = new Node(value);
+        let current = this.head;
 
         if (!this.head) {
             this.head = node;
             return;
         }
 
-        let current = this.head;
-
         while (current.next) {
-
             current = current.next;
         }
         current.next = node;
@@ -45,8 +46,8 @@ class LinkedList {
         let current = this.head
         let str = ''
         while (current) {
-              str += `{ ${current.value} } -> `
-              current = current.next
+            str += `{ ${current.value} } -> `
+            current = current.next
         }
         str += `NULL`
         console.log(str)
@@ -65,15 +66,65 @@ class LinkedList {
         }
         return contains
     }
+
+    insertBefore(value, newValue) {
+        const node = new Node(newValue)
+        let current = this.head
+
+        while (current) {
+            if (current.next.value === value) {
+                node.next = current.next
+                current.next = node
+                return
+            }
+            current = current.next
+        }
+    }
+
+    insertAfter(value, newValue) {
+        const node = new Node(newValue)
+        let current = this.head
+
+        while (current) {
+            if (current.value === value) {
+                node.next = current.next
+                current.next = node
+                return
+            }
+            current = current.next
+        }
+    }
+
+    kthFromEnd(k) {
+        let current = this.head
+        let length = 0
+        let nodeMap = {}
+
+        while (current) {
+            nodeMap[length] = current
+            current = current.next
+            length++
+        }
+
+        const index = (length - k)
+        return nodeMap[index]
+    }
+
 }
 
 let linkedList = new LinkedList()
 
-// linkedList.addToFront(4)
+// linkedList.addToFront(6)
+// linkedList.append(4)
+// linkedList.append(6)
+// linkedList.append(7)
+// linkedList.append(3)
+// linkedList.append(2)
+// linkedList.insertBefore(2, 10)
+// linkedList.insertBefore(7, 77)
+// linkedList.insertAfter(6, 76)
+// linkedList.insertAfter(77, 78)
 // linkedList.traverse()
-// linkedList.addToEnd(6)
-// linkedList.traverse()
-// linkedList.addToEnd(7)
-// linkedList.traverse()
+// console.log(linkedList.kthFromEnd(2))
 
 module.exports = linkedList
