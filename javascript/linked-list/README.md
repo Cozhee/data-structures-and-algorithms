@@ -14,3 +14,12 @@
 
 ## traverse
 - Prints out the values in the linked list in a `{ val } => { val } => { val } => NULL` format
+
+## insertBefore
+- Takes in a value and pointer and will place a new node infront of the pointer
+
+## insertAfter
+- Takes in a value and pointer and will place a new node after the pointer
+
+## kthFromEnd
+- Takes in k value and returns a node kth places from the end of a linked list
