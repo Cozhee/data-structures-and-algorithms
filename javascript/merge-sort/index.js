@@ -35,6 +35,4 @@ const mergeSort = array => {
 }
 
 
-const someArr = [3, 5, 2, 1, 32, 31, 65, 20, 13, 25, 15, 14, 8]
-
-console.log(mergeSort(someArr))
+module.exports = mergeSort
